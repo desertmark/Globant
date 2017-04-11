@@ -1,0 +1,37 @@
+﻿.grilla{
+    width:920px;
+    font-size:small;
+    color: grey;
+}
+.grilla a, .grilla a:visited, .grilla a:active{
+    text-decoration:none;
+    font-weight:bold;
+    float:right;
+}
+.grilla-item{
+    margin:5px;
+    width:448px;
+    background-color:lightgray;
+    display:inline-block;
+}
+.promotion-img{
+    width:50%;
+    float:left;
+}
+.promotion-description{
+    width:35%;
+    float:left;
+    margin:5%;
+}
+.origin{
+    font-weight:bold;
+}
+.blue-text{
+    color:#2e59bd  
+}
+.destination{
+    font-size:x-large;
+}
+.price{
+    font-size:xx-large;
+}
