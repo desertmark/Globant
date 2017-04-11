@@ -8,9 +8,25 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-header, main{
+.header-content, main{
     padding-top:20px;
     width:920px;
     margin-left:auto;
     margin-right:auto;
+}
+header{
+    box-shadow: -1px 1px 1px 1px lightgrey;
+}
+.header-contact{
+    font-size:small;
+    color:grey;
+    width:60%;
+    float:right;
+    padding-left:10px;
+}
+.header-contact select{
+    color:grey;
+    background-color:whitesmoke;
+    padding:10px;
+    padding-right:30px;
 }
