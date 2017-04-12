@@ -1,0 +1,15 @@
+﻿.carousel{
+    width:100%;
+    clear:both;
+    position:relative;
+}
+.carousel-izq{
+    position:absolute;
+    top:50%;
+    left:20px;
+}
+.carousel-der{
+    position:absolute;
+    top:50%;
+    right:20px;
+}
