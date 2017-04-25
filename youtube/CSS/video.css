@@ -1,0 +1,15 @@
+﻿.videoView{
+    max-width:220px; /*a 220 con 5 de margen suman los 920| 220x4 + 5x4 = 920*/
+    margin:5px;
+    background-color:white;
+    display:inline-block
+}
+.video-title a{
+    text-decoration:none;
+    color:#0094ff;
+}
+.video-descripcion, .video-descripcion a{
+    text-decoration:none;
+    color:grey;
+    font-size:small;
+}
