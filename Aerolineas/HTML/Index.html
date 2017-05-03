@@ -1,13 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
     <title>Aerolíneas Argentinas</title>
 	<meta charset="utf-8" />
     <link href="../CSS/layout.css" rel="stylesheet" />
     <link href="../CSS/grilla.css" rel="stylesheet" />
-    <link href="../CSS/promotion.css" rel="stylesheet" />
-    <link href="../CSS/topBar.css" rel="stylesheet" />
+    <link href="../CSS/header/header.css" rel="stylesheet" />
+    <link href="../CSS/promos/promotion.css" rel="stylesheet" />
+    <link href="../CSS/menu/menu.css" rel="stylesheet" />
     <link href="../CSS/carousel.css" rel="stylesheet" />
 
 </head>
@@ -15,32 +16,16 @@
 
     <header>
         <div class="header-content">
-            <div>
-                <img src="../Resources/logo_Aerolineas.gif" alt="Logo de Aerolineas argentinas"/>
-                <div class="header-contact">
-                    <p>
-                        Ingresá a tu cuenta Aerolíneas Plus 0810-222-86527
-                        <select>
-                            <option value="1">Argentina(Español)</option>
-                            <option value="2">Other countries (English)</option>                   
-                        </select>
-                    </p>
-                    <a href="#">Contacto y preguntas frecuentes</a>
-                </div>
-            </div>
-            <nav>
-                <a href="#">La empresa</a>
-                <a href="#">Reserva y servicios</a>
-                <a href="#">Info para tu viaje</a>
-                <a href="#">Aerolíneas Plus</a>
-            </nav>
+            <div id="header"></div>
+            <div id="menu"></div>
         </div>
     </header>
 
     <main>
         <div class="grilla">
             <div class="grilla-row">
-                <div class="grilla-item grilla-item-complejo">
+                <div id="bigPromos"></div>
+                <!--<div class="grilla-item grilla-item-complejo">
                     <div class="promotion">
                         <div class="promotion-img">
                             <img src="../Resources/calafate.jpg" alt="Imagen de el calafate" />
@@ -85,16 +70,13 @@
                             <a class="blue-text" href="#">Comprar</a>
                             </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
             <div class="grilla-row">
                 <div id="promos">
-                    
                 </div>
-            </div>
-                
-            </div>
+            </div>               
         </div>        
     </main>
     <aside>
@@ -109,9 +91,10 @@
         </div>
     </aside>
 </body>
-
+<script src="../js/components/header/HeaderView.js"></script>
 <script src="../js/components/promos/Promo.js"></script>
 <script src="../js/components/promos/PromoView.js"></script>
+<script src="../js/components/promos/bigPromo/BigPromoView.js"></script>
 <script src="../js/components/menu/Menu.js"></script>
 <script src="../js/components/menu/MenuView.js"></script>
 <script src="../js/app.js"></script>

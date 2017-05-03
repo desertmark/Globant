@@ -1,0 +1,25 @@
+﻿.header-contact{
+    font-size:small;
+    color:grey;
+    width:60%;
+    float:right;
+}
+
+.header-contact>a, .header-contact>p{
+    float:right;
+    padding-top:10px;
+}
+
+.header-contact a, .header-contact a:visited, .header-contact a:active{
+    text-decoration:none;
+    color:inherit;
+}
+.header-contact a:hover{
+    text-decoration:underline;
+}
+.header-contact select{
+    color:grey;
+    background-color:whitesmoke;
+    padding:10px;
+    padding-right:30px;
+}

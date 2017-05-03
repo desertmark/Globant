@@ -35,7 +35,7 @@ MenuView.prototype= {
     },
     createItemsList:function(){        
         let items = this.configs.items.map(item =>{
-            return `<li><a href="${item.href}" target="${item.target}">${item.text}</a></li>`
+            return `<a href="${item.href}" target="${item.target}">${item.text}</a>`
         }).reduce((prev,current)=> {
             return prev + current;
         },"");
@@ -43,10 +43,8 @@ MenuView.prototype= {
         
     },    
     render:function(){
-        let template = `<nav class="cols left md-12">
-                            <ul class="display-inline">
-                                <li><a>${this.createItemsList()}</a></li>
-                            </ul>
+        let template = `<nav class="${this.configs.class.join(' ')}">
+                            ${this.createItemsList()}
                         </nav>`;
         this.$el.innerHTML = template;
     }
