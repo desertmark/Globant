@@ -8,14 +8,14 @@ let headerConfig = {
         "src": "../Resources/logo_Aerolineas.gif",
         "alt": "Logo de Aerolineas argentinas"
     },
-    "telefono": "Ingresá a tu cuenta Aerolíneas Plus 0810-222-86527",
+    "telefono": "Ingresa&#769 a tu cuenta Aeroli&#769neas Plus 0810-222-86527",
     "contacto": {
         "href": "#contacto",
         "text": "Contacto y preguntas frecuentes"
     },
     "idiomas": [{
         "value": "1",
-        "text": "Argentina(Español)"
+        "text": "Argentina(Espa&ntildeol)"
     }, {
         "value": "2",
         "text": "Other countries (English)"
@@ -94,10 +94,10 @@ headerView.render();
  var bigPromos = [{
      "origin": "buenos aires",
      "destination": "el calafate",
-     "text": "llegá volando a el calafate. más rápido, más comodo, más cuotas.",
+     "text": "llega&#769 volando a el calafate. ma&#769s ra&#769pido, ma&#769s comodo, ma&#769s cuotas.",
      "img": {
          "src": "../resources/calafate.jpg",
-         "alt": "imagen del destino de la promoción"
+         "alt": "imagen del destino de la promociï¿½n"
      },
      "price": 1200,
      "currency": "ars",
@@ -106,10 +106,10 @@ headerView.render();
  {
      "origin": "buenos aires",
      "destination": "el calafate",
-     "text": "llegá volando a el calafate. más rápido, más comodo, más cuotas.",
+     "text": "llega&#769 volando a el calafate. ma&#769s ra&#769pido, ma&#769s comodo, ma&#769s cuotas.",
      "img": {
          "src": "../resources/calafate.jpg",
-         "alt": "imagen del destino de la promoción"
+         "alt": "imagen del destino de la promocio&#769n"
      },
      "price": 1200,
      "currency": "ars",
