@@ -2,6 +2,7 @@
 
 //This the data I will fill the model
 let headerConfig = {
+    "templateUrl": "/HTML/header.html",
     "el": "#header",
     "class": "",
     "logo": {

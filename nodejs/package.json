@@ -1,0 +1,35 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "curso globant",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "npm run deploy && npm run serve",
+    "deploy": "./node_modules/.bin/webpack",
+    "serve": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "jest": "^20.0.0",
+    "mocha": "^3.3.0",
+    "sinon": "^2.2.0",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/src/*.js",
+      "!**/node_modules/**",
+      "!*pord/**",
+      "!**/coverage/**"
+    ]
+  }
+}
