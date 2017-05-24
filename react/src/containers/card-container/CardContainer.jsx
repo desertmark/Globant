@@ -8,8 +8,8 @@ class CardContainer extends Component{
             <div className="card-container">
                 <div className="row">
                     {this.props.cards.map((card,index)=>{
-                        return  <div className="col-sm-4">
-                                    <Card key = {index} {...card}/> 
+                        return  <div className="col-sm-4" key = {index}>
+                                    <Card {...card}/> 
                                 </div>//Los tres puntos significa: Creá un objeto nuevo y extendé sus propiedades con lo que sigue, en este caso card. Ademas en este caso mapea los atributos de card con los del Componente Card, y me evito pasar los atributos 1 por 1 (image="card.image", etc.)
                     })}
                 </div>

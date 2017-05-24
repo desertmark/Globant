@@ -1,0 +1,9 @@
+{
+    "images":[{
+        "image": "http://www.aerolineas.com.ar/Images/BannersRelacionados/SalonCondorsliderinternoES_20170511091859.jpg",
+        "alt" :"Imagen 1 slider"
+    },{
+        "image": "http://www.aerolineas.com.ar/Images/BannersRelacionados/SliderProdOp_20170120025827.jpg",
+        "alt" :"Imagen 2 slider"
+    }]
+}
