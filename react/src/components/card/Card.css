@@ -1,0 +1,14 @@
+.card{
+    background-color:#ececec;
+}
+.card img{
+    max-width:100%
+}
+.card-description{
+    margin:5px;
+    padding:5px;
+}
+
+.card-description h4{
+    color:#0068ae;
+}

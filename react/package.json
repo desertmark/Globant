@@ -1,0 +1,40 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "serve-app": "webpack-dev-server",
+    "serve-stubs": "stubby -d stubs/stub.config.yml",
+    "start": "npm run serve-stubs && npm run serve-app"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stubby": "^4.0.0",
+    "webpack": "^2.5.1",
+    "webpack-combine-loaders": "^2.0.3",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "axios": "^0.16.1",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "history": "^4.6.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^5.0.0-alpha.6",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.3",
+    "redux-thunk": "^2.2.0",
+    "style-loader": "^0.17.0"
+  }
+}

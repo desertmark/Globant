@@ -1,0 +1,7 @@
+request:
+  url: /api/optional-products
+  latency: 3000
+response:
+  headers:
+    content-type: application/json
+  file: optionalProducts.json
