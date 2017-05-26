@@ -15,7 +15,7 @@ class OptionalProducts extends Component{
         return (
             <div>
 
-                {this.props.images.length > 0 && <Slider images = {this.props.images}/>}
+                {this.props.images.length > 0 && <Slider/>}
 
                 {this.props.isFetching && <div> loading... </div>}           
                 {this.props.products.length > 0 && <CardContainer cards = { this.props.products } />}

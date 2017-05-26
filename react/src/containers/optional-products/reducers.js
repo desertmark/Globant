@@ -26,7 +26,7 @@ export const optionalProducts = (state = {isFetching: false, products:[], error:
                 isFetching: true,
                 hasError: true,
                 error: action.error,
-            })
+            });
             break;
         default:
             return state;

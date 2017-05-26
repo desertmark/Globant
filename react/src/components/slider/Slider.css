@@ -1,0 +1,23 @@
+.slider{
+    width:100%;
+    position:relative;
+}
+#prev, #next{
+    position: absolute;
+    top:45%;
+    background-color:black;
+    color:white;
+    opacity:0.5;
+    border:none;
+    display:block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#prev{
+    left:1%;
+}
+#next{
+    right:1%;
+}
