@@ -8,7 +8,8 @@ module.exports = {
         publicPath: 'assets'
     },
     devServer: {
-        port: 9000,        
+        port: 9000,
+        historyApiFallback:true        
     },
     module: {
         loaders: [{

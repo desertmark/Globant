@@ -1,14 +1,13 @@
-import {NEXT,PREV} from './constants';
+import {NEXT,PREV, INIT} from './constants';
 const nextSlide  = (image,images) => {
-    let nextIndex = images.indexOf(image) + 1;
-    if(nextIndex == images.length){
-        nextIndex = 0;
-    }
-
-
+    // let nextIndex = images.indexOf(image) + 1;
+    // if(nextIndex == images.length){
+    //     nextIndex = 0;
+    // }
     return {
         type:NEXT,
-        nextImage:images[nextIndex]
+        images,
+        image
     }
 }
 
@@ -28,5 +27,12 @@ export const prev = () => {
     return dispatch => {
         dispatch(prevSlide());       
         alert('prev');
+    }
+}
+
+export const init = (image) => {
+    return {
+        type: INIT,
+        image
     }
 }

@@ -1,24 +1,37 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux'
-import {next,prev} from './actions';
+import {next,prev,init} from './actions';
 import {bindActionCreators} from 'redux';
 import './Slider.css';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 class Slider extends Component{
+    constructor(){
+        super();
+        this.prev = this.prev.bind(this);
+        this.next = this.next.bind(this);        
+    }
     componentDidMount(){
-        document.querySelector('#prev').addEventListener('click',()=>{
-            this.props.prev();
-        });
-
-        document.querySelector('#next').addEventListener('click',()=>{
-            this.props.next(this.props.activeImage, this.props.images);
-
-        });
+        this.props.init(this.props.images[0]);
+    }
+    
+    prev(){
+        this.props.prev();
+    }
+    next(){
+        this.props.next(this.props.activeImage, this.props.images);
     }
     render(){
         return <div className = "slider">
-                    <button id="prev" type="button"><span className="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button>
-                    <img src={this.props.activeImage.image} alt={this.props.activeImage.alt}/>
-                    <button id="next" type="button"><span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+                    <ReactCSSTransitionGroup
+                        transitionName="slide"
+                        transitionEnterTimeout={500}
+                        transitionLeaveTimeout={300}>
+                        <img key={1} src={this.props.activeImage.image} alt={this.props.activeImage.alt}/>
+                    </ReactCSSTransitionGroup>              
+                    
+                    <button id="prev" onClick={this.prev} type="button"><span className="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button>
+                    <button id="next" onClick={this.next} type="button"><span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+
                </div>
     }
 }
@@ -33,7 +46,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({
             next,
-            prev
+            prev,
+            init
         }, dispatch);
     
 }

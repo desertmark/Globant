@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import './Card.css';
 class Card extends Component{
     render(){
@@ -13,5 +14,10 @@ class Card extends Component{
         );
     }
 }
-
+Card.propTypes = {
+    image: PropTypes.string,
+    alt: PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string
+}
 export default Card;

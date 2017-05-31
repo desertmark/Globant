@@ -21,4 +21,4 @@ class Nav extends React.Component{
     }
 }
 
-export default connect()(Nav);
+export default Nav;
