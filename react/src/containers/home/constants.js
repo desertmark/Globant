@@ -1,0 +1,1 @@
+export const SLIDES_URL = "http://localhost:8882/api/opSlider"

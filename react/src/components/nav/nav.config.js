@@ -1,13 +1,13 @@
 export const navConfig = [{
-    "navOption":"Home",
+    "navOption":"Inicio",
     "Path":"/"
 },{
-    "navOption":"Optional prodctos",
+    "navOption":"Productos opcionales",
     "Path":"/optional-products"
 },{
-    "navOption":"Frequently Flyer Program",
+    "navOption":"Programa de pasajeros frecuentes",
     "Path":"/ffp"
 },{
-    "navOption":"Client services",
+    "navOption":"Servicios al cliente",
     "Path":"/client-services"
 }]

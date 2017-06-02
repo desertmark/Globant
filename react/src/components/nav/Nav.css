@@ -1,0 +1,14 @@
+.menu{
+    list-style-type: none;
+    margin:10px;
+    padding:0px;
+    font-size: 16px;    
+}
+.menu li{
+    margin-right:10px;
+    margin-top:10px;
+}
+
+.menu-horizontal li{
+    float:left;
+}

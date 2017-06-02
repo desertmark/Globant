@@ -6,7 +6,8 @@ import {optionalProducts,slideShow} from './containers/optional-products/reducer
 import {clientServices} from './containers/client-services/reducer';
 //Componentes
 import cards from './containers/card-container/reducer';
-import Slider from './components/slider/reducer';
+import {Slider, SliderApi} from './components/slider/reducer';
+
 
 import  {routerReducer} from 'react-router-redux';
 
@@ -17,6 +18,7 @@ const reducers = combineReducers({
     clientServices,
     slideShow,
     Slider,
+    SliderApi,
     routing: routerReducer
 });
 

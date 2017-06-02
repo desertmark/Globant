@@ -1,0 +1,17 @@
+header{
+    /*background-color:red;*/
+    width:1000px;
+    margin: 0 auto;
+    padding-top:15px;    
+    color:#666;
+}
+header img{
+    margin-left:-20px;
+    padding:0px;
+}
+
+header select {
+    min-height: 30px;
+    min-width: 200px;
+    border:none;
+}

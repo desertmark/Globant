@@ -1,19 +1,21 @@
 import React,{Component} from 'react';
 import {connect} from 'react-redux'
-import {next,prev,init} from './actions';
+import {next,prev,init,fetchSlideShow} from './actions';
 import {bindActionCreators} from 'redux';
 import './Slider.css';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 class Slider extends Component{
     constructor(){
         super();
         this.prev = this.prev.bind(this);
-        this.next = this.next.bind(this);        
+        this.next = this.next.bind(this);   
+    }
+    componentWillMount(){
+        this.props.fetchSlideShow(this.props.url);
     }
     componentDidMount(){
-        this.props.init(this.props.images[0]);
-    }
-    
+        
+    }    
     prev(){
         this.props.prev();
     }
@@ -24,7 +26,7 @@ class Slider extends Component{
         return <div className = "slider">
                     <ReactCSSTransitionGroup
                         transitionName="slide"
-                        transitionEnterTimeout={500}
+                        transitionEnterTimeout={300}
                         transitionLeaveTimeout={300}>
                         <img key={1} src={this.props.activeImage.image} alt={this.props.activeImage.alt}/>
                     </ReactCSSTransitionGroup>              
@@ -38,8 +40,9 @@ class Slider extends Component{
 
 const mapStateToProps = (state) => {
     return {
-        images: state.slideShow.images,
         activeImage: state.Slider.activeImage,
+        images: state.SliderApi.images,
+        isFetchingSlides: state.slideShow.isFetching,
     }
 }
 
@@ -47,7 +50,8 @@ const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({
             next,
             prev,
-            init
+            init,
+            fetchSlideShow
         }, dispatch);
     
 }
