@@ -26,7 +26,13 @@ class App extends React.Component {
     render() {
         return (            
             <div>
-                <Header/>
+                <Header logoSrc = "http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/logo_Aerolineas.gif"
+                        logoAlt = "Logo de aerolineas"
+                        telefono = "+5944433011"
+                        contactHref="/contact"
+                        contactText ="Comuniquese con nosotros"
+                        idiomas={[{"text":"Español (Argentina)", "value":1},{"text":"Inglés", "value":2},{"text":"Portugues", "value":3}]}
+                        />
                 <Route exact path ="/" component={Home}/>
                 <Route path="/ffp" component={FFP}/>
                 <Route path="/client-services" component={ClientServices}/>

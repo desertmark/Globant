@@ -14,7 +14,6 @@ class OptionalProducts extends Component{
     render(){
         return (
             <div>
-
                 {this.props.images.length > 0 && <Slider/>}
                 <br/>
                 {this.props.isFetching && <div> loading... </div>}           
