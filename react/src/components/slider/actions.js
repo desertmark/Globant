@@ -1,4 +1,6 @@
-import {NEXT,
+import {PLAY,
+        PAUSE,
+        NEXT,
         PREV, 
         INIT, 
         FETCH_SLIDE_SHOW,
@@ -7,7 +9,8 @@ import {NEXT,
     } from './constants';
 import axios from 'axios';
 
-const nextSlide  = (image,images) => {
+export const next = (image,images) => {
+
     return {
         type:NEXT,
         images,
@@ -15,22 +18,11 @@ const nextSlide  = (image,images) => {
     }
 }
 
-const prevSlide = () => {
+export const prev = (image, images) => {
     return {
-        type:PREV
-    }
-}
-
-export const next = (image,images) => {
-    return dispatch => {
-        dispatch(nextSlide(image,images));       
-    }
-}
-
-export const prev = () => {
-    return dispatch => {
-        dispatch(prevSlide());       
-        alert('prev');
+        type:PREV,
+        images,
+        image
     }
 }
 
@@ -41,6 +33,21 @@ export const init = (image) => {
     }
 }
 
+export const play = (playIntervalId) => {
+    return {
+        type:PLAY,
+        isPlaying: true,
+        isPaused: false,
+        playIntervalId
+    }
+}
+export const pause = () => {
+    return {
+        type:PAUSE,
+        isPlaying: false,
+        isPaused: true,
+    }
+}
 //FETCH SLIDE
 const fetchSlide = () =>{
     return {

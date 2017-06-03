@@ -10,7 +10,7 @@
     right:0%;  
     transition: 500ms linear;
 }
-#prev, #next{
+.sliderControl{
     position: absolute;
     top:45%;
     background-color:black;
@@ -21,8 +21,23 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    outline: none;
 }
-
+.sliderControl:hover{
+    opacity:1;
+}
+.sliderControl:active{
+    opacity:1;
+    box-shadow: white 0px 0px 15px
+}
+#play{
+    top:1%;
+    right:100px;
+}
+#pause{
+    top:1%;
+    right:20px;
+}
 #prev{
     left:1%;
 }
