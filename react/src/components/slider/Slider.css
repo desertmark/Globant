@@ -1,13 +1,14 @@
 .slider{
     width:100%;
     position:relative;
-    height: 400px;
+    height: 500px;
     overflow:hidden;
 }
 .slider img{
     height:100%;
     position:absolute;
-    right:0px;  
+    right:0%;  
+    transition: 500ms linear;
 }
 #prev, #next{
     position: absolute;
@@ -29,20 +30,20 @@
     right:1%;
 }
 
-.slide-enter {
-  opacity: 0.01;
+.fade-enter {
+    transform: translateX(-99.9%);
 }
 
-.slide-enter.slide-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
+.fade-enter-active {
+    right: 0%;
+    transition: 500ms linear;
 }
 
-.slide-leave {
-  opacity: 1;
+.fade-leave {
+    right: 0%;
 }
 
-.slide-leave.slide-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
+.fade-leave-active {
+    transform: translateX(99.9%);
+    transition: 500ms linear;
 }

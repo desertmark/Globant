@@ -22,13 +22,13 @@ class Slider extends Component{
     }
     render(){
         return <div className = "slider">
-                    <ReactCSSTransitionGroup
-                        transitionName="slide"
+                    <ReactCSSTransitionGroup 
+                        transitionName="fade" 
                         transitionEnterTimeout={500}
-                        transitionLeaveTimeout={300}>
-                        <img key={1} src={this.props.activeImage.image} alt={this.props.activeImage.alt}/>
-                    </ReactCSSTransitionGroup>              
-                    
+                        transitionLeaveTimeout={500}                         
+                        >
+                        <img key={this.props.activeImage.image} src={this.props.activeImage.image} alt={this.props.activeImage.alt}/>
+                    </ReactCSSTransitionGroup>                    
                     <button id="prev" onClick={this.prev} type="button"><span className="glyphicon glyphicon-menu-left" aria-hidden="true"></span></button>
                     <button id="next" onClick={this.next} type="button"><span className="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
 
