@@ -51,6 +51,14 @@
   "jest": {
     "transform": {
       ".*": "<rootDir>/node_modules/jest-css-modules"
-    }
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/src/**.jsx",
+      "**/src/**.js",
+      "!**/node_modules/**",
+      "!*pord/**",
+      "!**/coverage/**"
+    ]
   }
 }

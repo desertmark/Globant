@@ -11,6 +11,7 @@ class OptionalProducts extends Component{
         this.props.fetchOPtionalProducts();
         this.props.fetchSlideShow();
     }
+        
     render(){
         return (
             <div>

@@ -11,7 +11,7 @@ class ClientServices extends Component{
     render(){
         return (
             <div>
-                Client Services  Page.
+                {this.props.isFetching && <div classID="loading">loading...</div>}
                 {this.props.services.length > 0 && <CardContainer cards = {this.props.services}/>}
             </div>
         );

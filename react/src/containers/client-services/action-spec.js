@@ -1,5 +1,5 @@
 import axios from 'axios';
-import mockStore from 'redux-mock-store'
+import mockStore from 'redux-mock-store';
 import {fetchClientServices} from './actions';
 import {FETCH_CLIENT_SERVICES, ERROR_IN_FETCH_CLIENT_SERVICES, RECEIVE_CLIENT_SERVICES, CLIENT_SERVICES_API} from './constants';
 import MockAdapter from 'axios-mock-adapter'
