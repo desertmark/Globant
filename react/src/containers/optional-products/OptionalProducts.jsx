@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux'; //por ser contenedor
 import {fetchOPtionalProducts, fetchSlideShow} from './actions';
 import {bindActionCreators} from 'redux';
-
+import {OPTIONAL_PRODUCTS_SLIDE_SHOW} from './constants';
 import Slider from '../../components/slider/Slider.jsx';
 import CardContainer from '../../containers/card-container/CardContainer.jsx';
 
@@ -15,7 +15,7 @@ class OptionalProducts extends Component{
     render(){
         return (
             <div>
-                {this.props.images.length > 0 && <Slider/>}
+                {this.props.images.length > 0 && <Slider url={OPTIONAL_PRODUCTS_SLIDE_SHOW} interval={3000} />}
                 <br/>
                 {this.props.isFetching && <div> loading... </div>}           
                 {this.props.products.length > 0 && <CardContainer cards = { this.props.products } />}

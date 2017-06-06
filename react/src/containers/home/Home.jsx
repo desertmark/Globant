@@ -8,7 +8,7 @@ class Home extends Component{
     render(){
         return (
             <div>
-                <Slider url={SLIDES_URL}/>
+                <Slider url={SLIDES_URL} interval={3000}/>
                 hello {this.props.name}
             </div>
         );
