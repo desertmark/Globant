@@ -1,5 +1,5 @@
 // var path = require("path");
-// var combineLoaders = require('webpacl-combine-loaders');
+var combineLoaders = require('webpack-combine-loaders');
 // module.exports = {
 //     entry: './ClientApp/index.ts',
 //     resolve: {
@@ -44,6 +44,15 @@ module.exports = {
     },
 
     module: {
+        loaders:[
+            {
+            test: /\.css?$/,
+            loader: combineLoaders([{
+                loader: 'style-loader',
+            },{
+                loader:'css-loader'
+            }])
+        }],
         rules: [
             // All files with a '.ts' or '.tsx' extension will be handled by 'awesome-typescript-loader'.
             { test: /\.tsx?$/, loader: "awesome-typescript-loader" },

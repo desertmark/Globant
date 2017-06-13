@@ -1,7 +1,9 @@
 import * as React from 'react';
+import { RouteProps } from 'react-router';
 export interface HelloProps {
     compiler:string;
     framework:string;
+    &&RouteProps
 }
 
 export class Hello extends React.Component<HelloProps, undefined> {
