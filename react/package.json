@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "serve-app": "webpack-dev-server",
+    "build": "webpack",
+    "serve-app": "webpack-dev-server --env=dev",
+    "build:prod": "webpack --env=prod",
     "serve-stubs": "stubby -d stubs/stub.config.yml",
     "start": "npm run serve-stubs & npm run serve-app"
   },
@@ -22,7 +24,8 @@
     "stubby": "^4.0.0",
     "webpack": "^2.5.1",
     "webpack-combine-loaders": "^2.0.3",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {
     "axios": "^0.16.1",
