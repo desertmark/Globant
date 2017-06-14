@@ -1,10 +1,11 @@
-.slider{
+.slider{    
     width:100%;
     position:relative;
     height: 500px;
     overflow:hidden;
 }
 .slider img{
+    z-index:0;
     height:100%;
     position:absolute;
     right:0%;  
@@ -46,7 +47,7 @@
 }
 
 .fade-enter {
-    transform: translateX(-99.9%);
+    transform: translateX(-100%);
 }
 
 .fade-enter-active {
@@ -59,6 +60,6 @@
 }
 
 .fade-leave-active {
-    transform: translateX(99.9%);
+    transform: translateX(100%);
     transition: 500ms linear;
 }

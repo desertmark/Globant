@@ -1,0 +1,11 @@
+.home{
+    background-color:whitesmoke;
+}
+.flight-finder-wrapper{
+    width:1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -450px;
+    z-index: 2;
+    position: relative;
+}

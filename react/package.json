@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "transpile": "webpack",
     "serve-app": "webpack-dev-server",
     "serve-stubs": "stubby -d stubs/stub.config.yml",
     "start": "npm run serve-stubs & npm run serve-app"

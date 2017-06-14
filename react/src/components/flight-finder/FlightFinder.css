@@ -1,0 +1,26 @@
+.flight-finder{
+    width:500px;
+    background: white;
+}
+
+.flight-finder header {
+    width:100%;
+    color:white;
+    font-size:16px ;
+    background-color:#0079ca;
+    height:35px;
+}
+.flight-finder header * {
+    text-align: center;
+    margin-top:-8px;
+}
+
+.flight-finder form{
+    padding:15px;
+}
+.flight-finder .radios>*{
+    font-weight: 300;
+    color:#999;
+    margin-top:15px;
+    padding-right:15px;
+}
