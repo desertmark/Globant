@@ -5,8 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+<<<<<<< HEAD
     "transpile": "webpack",
     "serve-app": "webpack-dev-server",
+=======
+    "build": "webpack",
+    "serve-app": "webpack-dev-server --env=dev",
+    "build:prod": "webpack --env=prod",
+>>>>>>> 62b1ac32e4f3e7a077550205e789c8dc78f3c42f
     "serve-stubs": "stubby -d stubs/stub.config.yml",
     "start": "npm run serve-stubs & npm run serve-app"
   },
@@ -23,7 +29,8 @@
     "stubby": "^4.0.0",
     "webpack": "^2.5.1",
     "webpack-combine-loaders": "^2.0.3",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {
     "axios": "^0.16.1",
@@ -52,6 +59,14 @@
   "jest": {
     "transform": {
       ".*": "<rootDir>/node_modules/jest-css-modules"
-    }
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/src/**.jsx",
+      "**/src/**.js",
+      "!**/node_modules/**",
+      "!*pord/**",
+      "!**/coverage/**"
+    ]
   }
 }
